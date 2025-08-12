@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité (RGPD) - Debitek LockBox</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f8f9fa; color: #212529; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 2rem; background-color: #ffffff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        h1, h2 { color: #0d6efd; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem; margin-top: 2rem; }
+        h1 { text-align: center; border-bottom: none; margin-top: 0; }
+        p, ul { margin-bottom: 1rem; }
+        ul, ol { padding-left: 2rem; }
+        li { margin-bottom: 0.5rem; }
+        code { background-color: #e9ecef; padding: 0.2em 0.4em; font-size: 85%; border-radius: 3px; }
+        a { color: #0d6efd; }
+        a:hover { color: #0b5ed7; }
+        strong { color: #0b5ed7; }
+        .info { padding: 1rem; background-color: #cce5ff; border: 1px solid #b8daff; border-radius: 4px; color: #004085; }
+        footer { text-align: center; margin-top: 3rem; font-size: 0.9em; color: #6c757d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Politique de Confidentialité (RGPD)</h1>
+        <p style="text-align: center;">Dernière mise à jour : 12 Août 2024</p>
+
+        <p class="info">
+            <strong>Notre engagement : Votre vie privée est absolue.</strong><br>
+            Debitek LockBox a été conçu sur un principe fondamental : la <strong>confidentialité par conception ("privacy by design")</strong>. L'application est 100% locale, ce qui signifie que vos données vous appartiennent et ne quittent jamais votre contrôle.
+        </p>
+
+        <section>
+            <h2>1. Collecte et Traitement des Données</h2>
+            <p><strong>Debitek ne collecte, ne traite, ne stocke et ne transmet AUCUNE donnée personnelle ou sensible</strong> que vous enregistrez dans le coffre-fort de l'application Debitek LockBox.</p>
+            <p>Les informations que vous y entrez (identifiants, mots de passe, documents, etc.) sont stockées exclusivement sur votre propre appareil (ordinateur, clé USB, etc.).</p>
+        </section>
+
+        <section>
+            <h2>2. Sécurité de vos Données Locales</h2>
+            <ul>
+                <li><strong>Chiffrement Fort :</strong> Toutes les données que vous enregistrez sont chiffrées localement à l'aide de l'algorithme <strong>AES-256-GCM</strong>, un standard de l'industrie reconnu pour sa robustesse.</li>
+                <li><strong>Mot de Passe Maître :</strong> Votre mot de passe maître est la seule et unique clé permettant de déchiffrer vos données. Ce mot de passe n'est jamais stocké ni transmis. Il est utilisé en mémoire vive uniquement pour dériver la clé de chiffrement. Si vous l'oubliez, vos données deviennent inaccessibles, même pour nous.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Connexions Externes Limitées et Anonymes</h2>
+            <p>Par défaut, Debitek LockBox est conçu pour fonctionner hors ligne. Cependant, pour améliorer l'expérience utilisateur, deux types de connexions externes peuvent être établies, de manière anonyme et sécurisée :</p>
+            <ul>
+                <li>
+                    <strong>Récupération des logos de services (favicons) :</strong> Pour afficher le logo d'un service (ex: Facebook, Google), l'application envoie une requête anonyme au service tiers <code>logo.clearbit.com</code>. Cette requête contient uniquement le nom de domaine du service (ex: <code>google.com</code>) et aucune information personnelle ou identifiable.
+                </li>
+                <li>
+                    <strong>Vérification des mots de passe compromis :</strong> La fonctionnalité "Audit de Sécurité" utilise l'API <strong>k-Anonymity</strong> du service "Have I Been Pwned". Ce mécanisme garantit votre confidentialité :
+                    <ol>
+                        <li>Votre mot de passe est transformé en un "hash" (empreinte numérique) sur votre machine.</li>
+                        <li>Seuls les <strong>5 premiers caractères</strong> de ce hash sont envoyés à l'API.</li>
+                        <li>L'API renvoie une liste de tous les hashs commençant par ces 5 caractères qui sont connus dans des fuites de données.</li>
+                        <li>Votre application compare localement le reste de votre hash avec la liste reçue.</li>
+                    </ol>
+                    Ainsi, votre mot de passe complet ou même son hash complet ne quittent jamais votre ordinateur.
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>4. Site Web de Présentation et Cookies</h2>
+            <p>Le site web de présentation de Debitek LockBox est un site statique qui n'utilise <strong>aucun cookie de suivi ou de marketing</strong>. Votre navigation sur notre site est entièrement anonyme.</p>
+        </section>
+
+        <section>
+            <h2>5. Vos Droits Conformément au RGPD</h2>
+            <p>Puisque nous ne collectons aucune donnée personnelle, vous exercez vos droits directement sur les données que vous contrôlez.</p>
+            <ul>
+                <li><strong>Droit d'accès, de rectification et de suppression :</strong> Vous pouvez à tout moment consulter, modifier ou supprimer n'importe quelle entrée (identifiant, document...) directement depuis l'interface de l'application.</li>
+                <li><strong>Droit à l'oubli :</strong> Ce droit est exercé en supprimant votre profil d'utilisateur depuis les réglages de l'application, ou en supprimant manuellement le fichier de votre coffre-fort (<code>.krypt</code>) de votre disque dur.</li>
+                <li><strong>Droit à la portabilité des données :</strong> Vous pouvez exporter l'intégralité de vos identifiants dans un format structuré (JSON, CSV) via la fonction "Exporter le coffre" dans les réglages.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>6. Contact</h2>
+            <p>Pour toute question relative à cette politique de confidentialité, veuillez nous contacter via notre page <a href="https://www.facebook.com/profile.php?id=61576346290117" target="_blank" rel="noopener noreferrer">Facebook</a>.</p>
+        </section>
+
+        <footer>
+            <p>Debitek LockBox - La sécurité à votre portée.</p>
+            <p><a href="index.html">Retour à l'accueil</a></p>
+        </footer>
+    </div>
+</body>
+</html>
